@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños, Mi Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Feliz Cumpleaños, Amor 💖</h1>
+    </header>
+    
+    <!-- Sección de mensajes románticos -->
+    <section class="message-section">
+        <h2>Mis Mensajes para Ti</h2>
+        <div class="carousel">
+            <button class="carousel-button left" onclick="prevMessage()">⬅️</button>
+            <div class="message" id="messageDisplay"></div>
+            <button class="carousel-button right" onclick="nextMessage()">➡️</button>
+        </div>
+    </section>
+
+    <!-- Juego de recuerdos -->
+    <section class="quiz-section">
+        <h2>Juego de Recuerdos</h2>
+        <p>¿Cuánto recuerdas sobre nosotros? 🥰</p>
+        <button onclick="startQuiz()">¡Jugar!</button>
+        <div class="quiz-container hidden">
+            <p id="quiz-question"></p>
+            <div id="quiz-options"></div>
+            <button onclick="nextQuestion()">Siguiente</button>
+        </div>
+        <div id="quiz-result" class="hidden"></div>
+    </section>
+
+    <!-- Adivina el Momento -->
+    <section class="game-section">
+        <h2>Adivina el Momento</h2>
+        <p>Recuerda uno de nuestros momentos más especiales 💕</p>
+        <button onclick="startMomentGame()">¡Intentar!</button>
+        <div id="moment-game" class="hidden">
+            <p>¿Cuándo nos casamos?</p>
+            <button onclick="showResult(true)">25 de agosto</button>
+            <button onclick="showResult(false)">18 de junio</button>
+            <button onclick="showResult(false)">5 de julio</button>
+            <button onclick="showResult(false)">26 de septiembre</button>
+            <p id="moment-result"></p>
+        </div>
+    </section>
+
+    <!-- Test Rápido de Amor -->
+    <section class="test-section">
+        <h2>Test Rápido de Amor</h2>
+        <p>¿Qué tanto me conoces? 🌹</p>
+        <button onclick="startLoveTest()">¡Comenzar!</button>
+        <div id="love-test" class="hidden">
+            <p>¿Cuál es mi color favorito?</p>
+            <button onclick="loveTestResult(false)">Blanco</button>
+            <button onclick="loveTestResult(false)">Azul</button>
+            <button onclick="loveTestResult(true)">Beige</button>
+            <button onclick="loveTestResult(false)">Negro</button>
+            <p id="love-test-result"></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Te amo y siempre te amaré mi dulce amada,Felices 16 mi amor 💖</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

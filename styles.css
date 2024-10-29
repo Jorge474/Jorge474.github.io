@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(to right, #ffcc00, #cf0f0f);
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #14a9c4;
+}
+
+.login-container, .message-section, .quiz-section, .game-section, .test-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff6699;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff3366;
+}
+
+.error {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    cursor: pointer;
+    margin-left: -30px;
+    font-size: 18px;
+}

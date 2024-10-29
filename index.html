@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Cumpleaños</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Bienvenida, Amor</h2>
+        <p>Inicia sesión para descubrir tus sorpresas de cumpleaños 🎂</p>
+        <form id="loginForm" onsubmit="return handleLogin(event)">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" placeholder="La futura esposa de mi novio" required>
+            
+            <label for="password">Contraseña:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Nuestro amor es especial y único" required>
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+            
+            <button type="submit">Entrar</button>
+            <p id="error-message" class="error"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
